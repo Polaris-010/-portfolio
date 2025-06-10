@@ -1,0 +1,12 @@
+body{
+    /* 白色背景 */
+    background-color: #fefefe;
+    /* 預設字體 微軟正黑體，無顯示則用自帶的 */
+     font-family: "微軟正黑體", sans-serif;
+}
+/* 標題 */
+h1{
+    color: #6c5ce7;
+    /* center置中 */
+    text-align: center;
+}
