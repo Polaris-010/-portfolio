@@ -25,24 +25,29 @@ body::before{
     pointer-events: none;
     /* 不阻擋滑鼠點擊，自在互動不受背景影響 */
     background:
-    radial-gradient(circle at 10% 20%,rgba(255,255,255,0.15)1px,transparent 2px),
-    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
-    radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
-    radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
-    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
-    radial-gradient(circle at 70% 45%,rgba(255,255,255,0.15)1px,transparent 2px),
-    radial-gradient(circle at 35% 17%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
-    radial-gradient(circle at 41% 32%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
-    radial-gradient(circle at 77% 41%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
-    radial-gradient(circle at 09% 85%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
-    radial-gradient(circle at 90% 49%,rgba(255,255,255,0.15)1px,transparent 2px),
-    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
-    radial-gradient(circle at 73% 66%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
-    radial-gradient(circle at 66% 88%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
-    radial-gradient(circle at 23% 79%,rgba(255,255,255,0.14)1.4px,transparent  2.4px);
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,0.12) 1.4px, transparent 2.4px),
+    radial-gradient(circle at 85% 30%, rgba(255,255,255,0.07) 1.0px, transparent 2.0px),
+    radial-gradient(circle at 42% 76%, rgba(255,255,255,0.15) 1.6px, transparent 2.6px),
+    radial-gradient(circle at 73% 44%, rgba(255,255,255,0.10) 1.1px, transparent 2.1px),
+    radial-gradient(circle at 25% 60%, rgba(255,255,255,0.08) 0.9px, transparent 1.9px),
+    radial-gradient(circle at 66% 85%, rgba(255,255,255,0.13) 1.5px, transparent 2.5px),
+    radial-gradient(circle at 18% 34%, rgba(255,255,255,0.09) 1.2px, transparent 2.2px),
+    radial-gradient(circle at 92% 20%, rgba(255,255,255,0.14) 1.3px, transparent 2.3px),
+    radial-gradient(circle at 57% 49%, rgba(255,255,255,0.11) 1.0px, transparent 2.0px),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,0.06) 0.8px, transparent 1.8px),
+    radial-gradient(circle at 71% 27%, rgba(255,255,255,0.12) 1.1px, transparent 2.1px),
+    radial-gradient(circle at 8% 50%, rgba(255,255,255,0.10) 1.3px, transparent 2.3px),
+    radial-gradient(circle at 38% 15%, rgba(255,255,255,0.07) 0.9px, transparent 1.9px),
+    radial-gradient(circle at 63% 68%, rgba(255,255,255,0.13) 1.6px, transparent 2.6px),
+    radial-gradient(circle at 49% 92%, rgba(255,255,255,0.11) 1.4px, transparent 2.4px),
+    radial-gradient(circle at 15% 73%, rgba(255,255,255,0.08) 1.2px, transparent 2.2px),
+    radial-gradient(circle at 78% 10%, rgba(255,255,255,0.09) 0.7px, transparent 1.7px),
+    radial-gradient(circle at 53% 35%, rgba(255,255,255,0.14) 1.5px, transparent 2.5px),
+    radial-gradient(circle at 94% 60%, rgba(255,255,255,0.06) 0.8px, transparent 1.8px),
+    radial-gradient(circle at 40% 5%, rgba(255,255,255,0.10) 1.0px, transparent 2.0px);
     /* 在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點 */
     /* 每一個radial-gradient 都是模擬不同亮度、大小、位置的星星 */
-    animation: twinkle 10s linear infinite alternate;
+    animation: twinkle 5s linear infinite alternate;
     /* 使用動畫twinkle，10秒一輪 線性播放，無限次來回閃爍 */
 }
 
