@@ -16,12 +16,12 @@ body{
 }
 
 .star-container{
-    position: fixed;
+    position: relative;
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    /* overflow: hidden; */
+    overflow: hidden;
     position:relative;
     /* 或fixed */
     z-index: -1;/* 放在最底部 */
