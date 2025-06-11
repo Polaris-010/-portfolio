@@ -29,7 +29,17 @@ body::before{
     radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
     radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
     radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
-    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transparent  2.4px);
+    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
+    radial-gradient(circle at 70% 45%,rgba(255,255,255,0.15)1px,transparent 2px),
+    radial-gradient(circle at 35% 17%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
+    radial-gradient(circle at 41% 32%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
+    radial-gradient(circle at 77% 41%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
+    radial-gradient(circle at 09% 85%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
+    radial-gradient(circle at 90% 49%,rgba(255,255,255,0.15)1px,transparent 2px),
+    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
+    radial-gradient(circle at 73% 66%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
+    radial-gradient(circle at 66% 88%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
+    radial-gradient(circle at 23% 79%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
     /* 在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點 */
     /* 每一個radial-gradient 都是模擬不同亮度、大小、位置的星星 */
     animation: twinkle 10s linear infinite alternate;
