@@ -120,7 +120,7 @@ p{
 
   background: rgba(255,255,255,0.4);
   /* 白色+透明 */
-  padding: 20px 40;
+  padding: 20px 40px;
   border: radius 20px;
   display: inline-block;
   /* 包住文字不佔一行 */
@@ -128,6 +128,8 @@ p{
   /* 柔光 */
   backdrop-filter: blur(4px);
   /* 毛玻璃感，讓背景更通透 */
+  margin: 50px auto;
+  display: table;
 }
 .navbar ul {
     list-style: none;
