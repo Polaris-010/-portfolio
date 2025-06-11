@@ -1,8 +1,13 @@
-body{
+html body{
     background:linear-gradient(135deg,#0b0c2a 0%,#1e2746 50%,#0b0c2a 100%);
     /* 預設字體 微軟正黑體，無顯示則用自帶的 */
      font-family: "微軟正黑體", sans-serif;
      color: #ffffff;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+}
+body{
      padding-top: 80px;
 }
 /* 標題 */
