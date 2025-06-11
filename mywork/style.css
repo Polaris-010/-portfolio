@@ -48,7 +48,7 @@ body::before{
     /* 在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點 */
     /* 每一個radial-gradient 都是模擬不同亮度、大小、位置的星星 */
     animation: twinkle 5s linear infinite alternate;
-    /* 使用動畫twinkle，10秒一輪 線性播放，無限次來回閃爍 */
+    /* 使用動畫twinkle，5秒一輪 線性播放，無限次來回閃爍 */
 }
 
 /* @keyframes twinkle{
