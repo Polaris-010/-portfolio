@@ -1,16 +1,23 @@
 body{
-    /* 白色背景 */
-    background-color: #fefefe;
+    background:linear-gradient(135deg,#0b0c2a 0%,#1e2746 50%,#0b0c2a 100%);
     /* 預設字體 微軟正黑體，無顯示則用自帶的 */
      font-family: "微軟正黑體", sans-serif;
+     color: #ffffff;
+     padding-top: 80px;
 }
 /* 標題 */
 h1{
     color: #6c5ce7;
     /* center置中 */
     text-align: center;
+    color: #a20bfe;
 }
 
+p{
+    text-align: center;
+    font: #a20bfe;
+    text-shadow: 0 0 8px #a20bfe;
+}
 .navbar{
     position: fixed;
     /* 讓導覽列「固定」在畫面上*/
