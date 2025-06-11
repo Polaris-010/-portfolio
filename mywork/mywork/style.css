@@ -12,27 +12,33 @@ html,body{
      /* 給body設定參考座標，以便before層能正確定位*/
 }
 body{
-    background: #000; /* 黑夜背景，襯托半透明 */
-    color: #fff;
-    font-family: "Noto Sans TC", sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 2rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: linear-gradient(135deg,#0b0c2a 0%,#1e2746 50%,#0b0c2a 100%);
+  font-family: "微軟正黑體", sans-serif;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column; /* 改成上下排列 */
+  justify-content: center; /* 垂直置中 */
+  align-items: center;     /* 水平置中 */
+  gap: 2rem; /* 區塊間距 */
 }
 .curved-box {
-    margin: 2rem auto;
-    padding: 2rem 3rem;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.15); /* 半透明白色 */
-    border-radius: 40px / 30px; /* 弧形圓角，不是單純圓角，是橢圓弧度 */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* 輕微發光感 */
-    backdrop-filter: blur(6px); /* 背景模糊，玻璃質感 */
-    border: 1px solid rgba(255, 255, 255, 0.25); /* 輕柔邊框 */
-    color: #eee;
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.15); /* 更透明些 */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 40px / 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  padding: 2rem 3rem;
+  max-width: 400px;
+  text-align: center;
 }
 /* 星星容器 用::befroe伺服器創造一層星空覆蓋整頁面(暫時不用)*/
 body::before{
