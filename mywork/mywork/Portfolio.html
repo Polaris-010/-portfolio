@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="about.html">自我介紹</a></li>
+            <li><a href="work.html">作品集</a></li>
+        </ul>
+    </nav>
+    <div class="star-container"></div>
+    <h1>歡迎</h1>
+    <p>你好</p>
+    
+    <script>
+        const starContainer = document.querySelector('.star-container');
+        // 1抓取放置星星容器
+        for(let i =0;i<100; i++){
+            //2建立迴圈，讓星星增長到100顆
+            const star  = document.createElement('div');
+            //3給每一顆星星都有div的元素
+            star.classList.add('star');//給他一個class，方便css控制樣式
+
+            const size =  Math.random()*2+1;
+            //4設置星星大小1~3之間變化 讓他像真實一般大小閃爍著
+            //5星星位置隨機散步在視窗的高(vh)和寬vw百分比範圍內
+            const top = Math.random() *100;//上方距離百分比
+            const left = Math.random()  *100;//下方距離百分比
+
+            star.style.width = `${size}px`;
+            star.style.height =  `${size}px`;
+            star.style.top =  `${top}vh`;
+            star.style.left =  `${left}vw`;
+            //6把大小與位置直接用行內樣式寫入元素，立即生效
+
+            star.style.animationDuration = `${Math.random()*4+2}s`;
+            //7讓每顆星的閃爍動畫速度也隨機
+
+            starContainer.appendChild(star);
+            //將星星放進裝星星的容器裡，出現在畫面上
+        }
+    </script>
+</body>
+</html>

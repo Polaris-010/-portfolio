@@ -1,0 +1,152 @@
+html,body{
+    background:linear-gradient(135deg,#0b0c2a 0%,#1e2746 50%,#0b0c2a 100%);
+    /* 預設字體 微軟正黑體，無顯示則用自帶的 */
+     font-family: "微軟正黑體", sans-serif;
+     color: #ffffff;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     /* overflow: hidden; */
+     /* 避免星星動畫跑出去 */
+     /* position: relative; */
+     /* 給body設定參考座標，以便before層能正確定位*/
+}
+body{
+     padding-top: 80px;
+}
+
+.star-container{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* overflow: hidden; */
+    position:relative;
+    /* 或fixed */
+    z-index: -1;/* 放在最底部 */
+}
+
+.star{
+    position:absolute;
+    background-color:white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 4s infinite  ease-in-out;
+}
+/* 星星容器 用::befroe伺服器創造一層星空覆蓋整頁面(暫時不用)*/
+/* body::before{
+    content: "";
+    虛無空殼 裝飾
+    position:fixed;
+    固定視窗，不隨滾動移動
+    top: 0;left: 0; right: 0; bottom: 0;
+    /整個螢幕 
+    pointer-events: none;
+    不阻擋滑鼠點擊，自在互動不受背景影響
+    background:
+    radial-gradient(circle at 10% 20%,rgba(255,255,255,0.15)1px,transparent 2px),
+    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
+    radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
+    radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
+    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transparent  2.4px);
+    在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點
+    每一個radial-gradient 都是模擬不同亮度、大小、位置的星星
+    animation: twinkle 10s linear infinite alternate;
+    使用動畫twinkle，10秒一輪 線性播放，無限次來回閃爍
+} */
+
+@keyframes twinkle{
+    0%,100%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 0.8;
+        transform: translateY(-5px); 
+    }
+}
+/* 閃爍動畫 */
+/* @keyframes twinkle{
+    0%{
+        filter:brightness(1); 正常亮度
+        transform:translate(0,0); 不移動
+    }
+    50%{
+        filter:brightness(1.5);  亮度提高，模擬閃爍
+        transform:translate(2px,-2px); 整體微微移動，像在天空中浮動
+    }
+    100%{
+        filter:brightness(1); 回到原始亮度
+        transform:translate(0,0);
+    }
+} */
+
+/* 標題 */
+h1{
+    color: #6c5ce7;
+    /* center置中 */
+    text-align: center;
+    color: #a20bfe;
+}
+
+p{
+    text-align: center;
+    font: #a20bfe;
+    text-shadow: 0 0 8px #a20bfe;
+}
+.navbar{
+    position: fixed;
+    /* 讓導覽列「固定」在畫面上*/
+    top: 0;
+    /*導覽列貼其最上*/
+    left: 0;
+    /* 貼其左側 */
+    width: 100%;
+    /* 寬度設定100% */
+    background-color: #222;
+    /* 深灰 */
+    padding: 10PX 0;
+    /* 上下為10px，左右0 */
+    z-index: 1000;
+    /* 層級設定超高 */
+}
+
+.navbar ul {
+    list-style: none;
+    /* 移除u1元素的預設原點符號 */
+    display: flex;
+    /* 使u1裡的li橫向排列 */
+    justify-content: center;
+    /* 將所有項目置中對其 */
+    gap: 40px;
+    /* li之間的間距 */
+    margin: 0;
+    /* 移除u1的外據(預設有兼具) */
+    padding: 0;
+    /* 同上 */
+}
+
+.navbar a{
+    color: #ffffff;
+    /* 連結 */
+    text-decoration: none;
+    /* 取消連結的底線 */
+    font-weight: bold;
+    /* 文字加粗 */
+    font-size: 16px;
+    transition: color 0.4s,text-shadow0 0.4s;
+}
+.navbar a:hover{
+    color: #f2a0c2;
+    /* 銀河粉 */
+    text-shadow: 
+        0 0 4px #7fbcff,
+        /* 暮光藍 */
+        0 0 8px #b388eb,
+        /* 星雲紫 */
+        0 0 12px #f0ca24;
+        /* 星火金 */
+    ;
+    /* 滑鼠滑過時 變色 */
+}
