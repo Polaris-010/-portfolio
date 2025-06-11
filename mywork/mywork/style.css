@@ -15,16 +15,15 @@ body{
      padding-top: 80px;
 }
 
-.star-container{
-    position: relative;
-    top: 0; left: 0;
+.star-container {
+    position: fixed;/* 用 fixed 可以讓星空當背景一直存在不動 */
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none;
+    pointer-events: none;/* 不阻擋滑鼠點擊 */
     overflow: hidden;
-    position:relative;
-    /* 或fixed */
-    z-index: -1;/* 放在最底部 */
+    z-index: -1;/* 放在最底層，不遮住內容 */
 }
 
 .star{
