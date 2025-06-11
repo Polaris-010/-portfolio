@@ -17,7 +17,7 @@ body{
 /* 星星容器 用::befroe伺服器創造一層星空覆蓋整頁面(暫時不用)*/
 body::before{
     content: "";
-    /* 虛無空殼 裝飾 */
+    /* 空殼 裝飾 */
     position:fixed;
     /* 固定視窗，不隨滾動移動 */
     top: 0;left: 0; right: 0; bottom: 0;
@@ -39,7 +39,7 @@ body::before{
     radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
     radial-gradient(circle at 73% 66%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
     radial-gradient(circle at 66% 88%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
-    radial-gradient(circle at 23% 79%,rgba(255,255,255,0.14)1.4px,transparent  2.4px),
+    radial-gradient(circle at 23% 79%,rgba(255,255,255,0.14)1.4px,transparent  2.4px);
     /* 在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點 */
     /* 每一個radial-gradient 都是模擬不同亮度、大小、位置的星星 */
     animation: twinkle 10s linear infinite alternate;
