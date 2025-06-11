@@ -10,3 +10,26 @@ h1{
     /* center置中 */
     text-align: center;
 }
+
+.navbar{
+    background-color: #222;
+    padding: 10px;
+}
+
+.navbar u1 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar a:hover{
+    color: #f9ca24;
+}
