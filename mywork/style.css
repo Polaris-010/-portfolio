@@ -12,24 +12,57 @@ h1{
 }
 
 .navbar{
+    position: fixed;
+    /* 讓導覽列「固定」在畫面上*/
+    top: 0;
+    /*導覽列貼其最上*/
+    left: 0;
+    /* 貼其左側 */
+    width: 100%;
+    /* 寬度設定100% */
     background-color: #222;
-    padding: 10px;
+    /* 深灰 */
+    padding: 10PX 0;
+    /* 上下為10px，左右0 */
+    z-index: 1000;
+    /* 層級設定超高 */
 }
 
 .navbar u1 {
     list-style: none;
+    /* 移除u1元素的預設原點符號 */
     display: flex;
+    /* 使u1裡的li橫向排列 */
     justify-content: center;
-    gap: 20px;
+    /* 將所有項目置中對其 */
+    gap: 40px;
+    /* li之間的間距 */
     margin: 0;
+    /* 移除u1的外據(預設有兼具) */
     padding: 0;
+    /* 同上 */
 }
 
 .navbar a{
-    color: #fff;
+    color: #ffffff;
+    /* 連結 */
     text-decoration: none;
-    transition: color 0.3s;
+    /* 取消連結的底線 */
+    font-weight: bold;
+    /* 文字加粗 */
+    font-size: 16px;
+    transition: color 0.4s,text-shadow0 0.4s;
 }
 .navbar a:hover{
-    color: #f9ca24;
+    color: #f2a0c2;
+    /* 銀河粉 */
+    text-shadow: 
+        0 0 4px #7fbcff,
+        /* 暮光藍 */
+        0 0 8px #b388eb,
+        /* 星雲紫 */
+        0 0 12px #f0ca24;
+        /* 星火金 */
+    ;
+    /* 滑鼠滑過時 變色 */
 }
