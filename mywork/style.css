@@ -35,7 +35,7 @@ p{
     /* 層級設定超高 */
 }
 
-.navbar u1 {
+.navbar ul {
     list-style: none;
     /* 移除u1元素的預設原點符號 */
     display: flex;
