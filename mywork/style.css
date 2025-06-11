@@ -25,11 +25,11 @@ body::before{
     pointer-events: none;
     /* 不阻擋滑鼠點擊，自在互動不受背景影響 */
     background:
-    radial-gradient(circle at 10% 20%,rgba(255,255,255,0.15)1px,transition 2px),
-    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transition 2.5px),
-    radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transition 2.2px),
-    radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transition 1.8px),
-    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transition 2.4px);
+    radial-gradient(circle at 10% 20%,rgba(255,255,255,0.15)1px,transparent 2px),
+    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transparent  2.5px),
+    radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transparent  2.2px),
+    radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transparent  1.8px),
+    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transparent  2.4px);
 
     animation: twinkle 10s linear infinite alternate;
 }
