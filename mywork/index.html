@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <nav class="navbar">
+        <ul>
+            <li><a href="about.html">自我介紹</a></li>
+            <li><a href="work.html">作品集</a></li>
+        </ul>
+    </nav>
+    <h1 class="welcome-title">Welcome</h1>
+    <p>這裡是我的個人網站，上面有關於我個人的訊息</p>
+    <p>如果有興趣的話，可以點選上面查看</p>
+    <img src="cat1.jpg" alt="我圖呢？"style="display:  block; margin: 0 auto;width:200px;">
+    <!-- 容器 -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        // fetch("navbar.html") fetch是JavaScript用來"讀取外部檔案"的工具，意思就是去拿navbar裡的內容
+        fetch("navbar.html")
+        // 接續動作，當fetch("navbar.html")成功抓取到資料時，將結果(res)轉換成純文字格式，就是轉換成可讀的html
+        .then(res => res.test())
+        //當資料轉換成文字後，接著執行這區塊裡的動作，data就是navbar的文字內容。
+        .then(data =>{
+            //找到畫面上ID為navbar-placeholder的<div>
+            //然後把剛剛抓來的navbar.html的內容丟進去
+            //把navbar.html的內容顯示丟在這裡
+            document.getElementById("navbar-placehollder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
