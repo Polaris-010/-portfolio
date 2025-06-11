@@ -6,9 +6,46 @@ html,body{
      height: 100%;
      margin: 0;
      padding: 0;
+     overflow: hidden;
+     /* 避免星星動畫跑出去 */
+     position: relative;
 }
 body{
      padding-top: 80px;
+}
+
+/* 星星容器 用::befroe伺服器創造一層星空覆蓋整頁面*/
+body::before{
+    content: "";
+    /* 虛無空殼 裝飾 */
+    position:fixed;
+    /* 固定視窗，不隨滾動移動 */
+    top: 0;left: 0; right: 0; bottom: 0;
+    /* 整個螢幕 */
+    pointer-events: none;
+    /* 不阻擋滑鼠點擊，自在互動不受背景影響 */
+    background:
+    radial-gradient(circle at 10% 20%,rgba(255,255,255,0.15)1px,transition 2px),
+    radial-gradient(circle at 40% 70%,rgba(255,255,255,0.10)1.5px,transition 2.5px),
+    radial-gradient(circle at 80% 40%,rgba(255,255,255,0.12)1.2px,transition 2.2px),
+    radial-gradient(circle at 60% 80%,rgba(255,255,255,0.08)0.8px,transition 1.8px),
+    radial-gradient(circle at 30% 50%,rgba(255,255,255,0.14)1.4px,transition 2.4px);
+
+    animation: twinkle 10s linear infinite alternate;
+}
+@keyframes twinkle{
+    0%{
+        filter:brightness(1);
+        transform:translate(0,0);
+    }
+    50%{
+        filter:brightness(1.5);
+        transform:translate(2px,-2px);
+    }
+    100%{
+        filter:brightness(1);
+        transform:translate(0,0);
+    }
 }
 /* 標題 */
 h1{
