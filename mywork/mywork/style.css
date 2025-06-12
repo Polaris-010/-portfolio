@@ -12,33 +12,7 @@ html,body{
      /* 給body設定參考座標，以便before層能正確定位*/
 }
 body{
-  background: linear-gradient(135deg,#0b0c2a 0%,#1e2746 50%,#0b0c2a 100%);
-  font-family: "微軟正黑體", sans-serif;
-  color: #fff;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column; /* 改成上下排列 */
-  justify-content: center; /* 垂直置中 */
-  align-items: center;     /* 水平置中 */
-  gap: 2rem; /* 區塊間距 */
-}
-.curved-box {
-  position: relative;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.15); /* 更透明些 */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 40px / 30px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  padding: 2rem 3rem;
-  max-width: 400px;
-  text-align: center;
+     padding-top: 80px;
 }
 /* 星星容器 用::befroe伺服器創造一層星空覆蓋整頁面(暫時不用)*/
 body::before{
@@ -70,11 +44,11 @@ body::before{
     radial-gradient(circle at 78% 10%, rgba(255,255,255,0.09) 0.7px, transparent 1.7px),
     radial-gradient(circle at 53% 35%, rgba(255,255,255,0.14) 1.5px, transparent 2.5px),
     radial-gradient(circle at 94% 60%, rgba(255,255,255,0.06) 0.8px, transparent 1.8px),
-    radial-gradient(circle at 40% 5%, rgba(255,255,255,0.10) 1.0px, transparent 2.0px);
+     radial-gradient(circle at 40% 5%, rgba(255,255,255,0.10) 1.0px, transparent 2.0px);
     /* 在畫面10% x, 20% y 的位置生產一顆1px 大、透明邊界為2px的白色星點 */
     /* 每一個radial-gradient 都是模擬不同亮度、大小、位置的星星 */
     animation: twinkle 5s linear infinite alternate;
-    /* 使用動畫twinkle，5秒一輪 線性播放，無限次來回閃爍 */
+    /* 使用動畫twinkle，10秒一輪 線性播放，無限次來回閃爍 */
 }
 
 /* @keyframes twinkle{
@@ -137,7 +111,26 @@ p{
     z-index: 1000;
     /* 層級設定超高 */
 }
+.welcome-title {
+  font-size: 4rem;       /* 字體放大 */
+  margin-top: 20px;      /* 靠上，距離上方的間距 */
+  text-align: center;    /* 置中 */
+  font-weight: bold;     /* 加粗 */
+  color: #ffffff;
 
+  background: rgba(255,255,255,0.4);
+  /* 白色+透明 */
+  padding: 20px 40px;
+  border: radius 20px;
+  display: inline-block;
+  /* 包住文字不佔一行 */
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  /* 柔光 */
+  backdrop-filter: blur(4px);
+  /* 毛玻璃感，讓背景更通透 */
+  margin: 50px auto;
+  display: table;
+}
 .navbar ul {
     list-style: none;
     /* 移除u1元素的預設原點符號 */
