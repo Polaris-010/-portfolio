@@ -216,4 +216,12 @@ p{
 .Mylike-text p{
     color: #ffd700;
 }
+.intro-section.reverse {
+  flex-direction: row-reverse;
+  text-align: right; /* 讓文字靠右 */
+}
+
+.intro-section.reverse .intro-text p {
+  text-align: right; /* 也讓段落文字靠右 */
+}
 
