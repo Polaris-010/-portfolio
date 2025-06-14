@@ -228,7 +228,7 @@ p{
 .page-layout {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch-stretch;
   gap: 40px;
   max-width: 1200px;
   margin: 40px auto;
@@ -240,4 +240,10 @@ p{
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /*強制靠上對齊 */
+  flex: 1;
 }
