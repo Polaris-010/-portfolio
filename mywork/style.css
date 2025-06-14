@@ -176,7 +176,7 @@ p{
 .intro-section {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   /* margin-bottom: 60px; */
 }
 
@@ -190,21 +190,21 @@ p{
 
 .my-name {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 42px;
     text-align: center;
 }
-
+/* 圖片尺寸 */
 .intro-img {
-  width: 200px;
+  width: 400px;
   border-radius: 10px;
   display: block;
   margin: 0;
 }
 /* 作用在class容器上 */
 .intro-text {
-  max-width: 600px;
+  max-width: 20px;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.8;
   padding-top: 65px; /* 推下去，不影響段落之間距離 */
 }
 /* 設定每個p */
