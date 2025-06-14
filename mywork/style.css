@@ -196,3 +196,15 @@ p{
   font-size: 18px;
   line-height: 1.6;
 }
+.img-with-anme{
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列Polaris，從上至下 */
+    align-items: center;
+    /* 水平置中(可選) */
+}
+.my-label{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
