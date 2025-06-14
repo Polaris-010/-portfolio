@@ -201,7 +201,7 @@ p{
 .intro-text p {
   max-width: 600px;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 0.5;
   margin-top: 65px;
   text-align: left !important;
 }
