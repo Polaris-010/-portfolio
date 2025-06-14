@@ -170,13 +170,14 @@ p{
     /* 滑鼠滑過時 變色 */
 }
 .about-container {
-  padding: 30px;
+  padding: 1000px;
 }
 
 .intro-section {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  flex-wrap: wrap;
   /* margin-bottom: 60px; */
 }
 
@@ -186,6 +187,7 @@ p{
     flex-direction: column;
     /* 垂直排列Polaris，從上至下 */
     align-items: flex-start;
+    flex: 0 0 400px; 
 }
 
 .my-name {
@@ -195,7 +197,8 @@ p{
 }
 /* 圖片尺寸 */
 .intro-img {
-  width: 400px;
+  width: 100px;
+  max-width: 4000px;
   border-radius: 10px;
   display: block;
   margin: 0;
