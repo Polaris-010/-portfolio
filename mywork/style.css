@@ -234,6 +234,6 @@ p{
   gap: 40px;/* 每塊介紹上下間距 */
 }
 
-.Mywife-text{
+.Mywife-text p{
     color: #ffd700;
 }
