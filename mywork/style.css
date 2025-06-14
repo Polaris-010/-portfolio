@@ -216,37 +216,4 @@ p{
 .Mylike-text p{
     color: #ffd700;
 }
-.book-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 60px auto;
-  border-left: 5px solid #a3876f; /* 書本中線 */
-}
 
-.book-left,
-.book-right {
-  flex: 1;
-  padding: 20px;
-}
-
-.book-left .intro-section {
-  margin-bottom: 40px;
-}
-
-.big-image {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 10px;
-  display: block;
-  margin: 20px 0;
-}
-
-.char-desc {
-  text-align: left;
-  font-weight: bold;
-  color: #fff;
-}
