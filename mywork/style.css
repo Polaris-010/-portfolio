@@ -216,3 +216,24 @@ p{
 .Mylike-text p{
     color: #ffd700;
 }
+.book-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1000px;
+}
+.book-left{
+    flex: 1;
+    max-width: 600px;
+}
+.book-right{
+    flex-shrink: 0;
+}
+.cat2-image{
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
