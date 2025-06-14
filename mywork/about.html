@@ -8,30 +8,22 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-    <!-- 左右兩欄 -->
-
+    <!-- 書本式容器 -->
+  <div class="book-layout">
+    
     <!-- 第一個介紹 -->
     <div class="about-container">
-        <div class="intro-section">
-            <!-- <div class="book-wrapper">
-                <div class="book-left"> -->
-            <div class="img-with-name">
-            <h1 class="my-name">Polaris</h1>
-            <img src="cat1.jpg" alt="照片" class="intro-img">
-                </div>
+         <div class="book-left">
+            <div class="intro-section">
+                <div class="img-with-name">
+                    <h1 class="my-name">Polaris</h1>
+                        <img src="cat1.jpg" alt="照片" class="intro-img">
+                    </div>
                 <div class="intro-text">
                     <p>你好，Polaris是我的匿名，也是常常用於網路上的匿名。</p>
-                <p>喜好:繪畫、捏3D(捏不起)、程式(雖然看不懂會有點痛苦)、看動漫、漫畫、輕小說、聽歌、寫文章、寫小說。</p>
+                    <p>喜好:繪畫、捏3D(捏不起)、程式(雖然看不懂會有點痛苦)、看動漫、漫畫、輕小說、聽歌、寫文章、寫小說。</p>
+                </div>
             </div>
-        </div>
-    </div>
-
-
-    <!-- 大圖片 -->
-    <div class="full-image-section">
-  <img src="cat2.jpg" class="big-image" alt="大圖" />
-</div>
-
 
     <!-- 第二個介紹 -->
     <div class="about-container">
@@ -46,6 +38,13 @@
             </div>
         </div>
     
+    <div class="book-right">
+      <h1 class="my-name">SASASAS</h1>
+      <img src="cat3.jpg" class="big-image" alt="大圖" />
+      <p class="char-desc">這張照片代表我想說的全部。</p>
+    </div>
+  </div>
+
     <script>
         fetch("navbar.html")
         .then(res => res.text())
