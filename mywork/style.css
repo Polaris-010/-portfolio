@@ -181,11 +181,11 @@ p{
 }
 
 .img-with-anme{
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     /* 垂直排列Polaris，從上至下 */
-    align-items: center;
+    align-items: flex-start;
 }
 
 .my-name {
@@ -197,7 +197,8 @@ p{
 .intro-img {
   width: 200px;
   border-radius: 10px;
-  /* display: block; */
+  display: block;
+  margin: 0;
 }
 /* 作用在class容器上 */
 .intro-text {
