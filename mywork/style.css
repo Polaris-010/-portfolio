@@ -6,7 +6,8 @@ html,body{
      height: 100%;
      margin: 0;
      padding: 0;
-     overflow: hidden;
+     overflow-x: hidden;
+     /* 限制橫向滾動 */
      /* 避免星星動畫跑出去 */
      position: relative;
      /* 給body設定參考座標，以便before層能正確定位*/
