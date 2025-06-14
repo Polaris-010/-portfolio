@@ -197,15 +197,26 @@ p{
   width: 200px;
   border-radius: 10px;
 }
-/* 自我介紹區塊 */
-.intro-text p {
+.intro-text {
   max-width: 600px;
   font-size: 16px;
   line-height: 1.5;
+  padding-top: 65px; /* 推下去，不影響段落之間距離 */
+  text-align: left;
+}
+.intro-text p {
+  margin: 0 0 8px 0; /* 每段間距固定，不會變太遠 */
+  padding: 0;
+}
+/* 自我介紹區塊 */
+/* .intro-text p {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.5; */
   /* margin: 65px 0 0 0; */
   /* margin-bottom: 8px;
   margin-top: 65px; */
-  text-align: left;
+  /* text-align: left;
   padding-top: 65px;
-  margin: 0;
-}
+  margin: 0; */
+/* } */
