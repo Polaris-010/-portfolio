@@ -92,7 +92,7 @@ h1{
 
 p{
     text-align: center;
-    font: #a20bfe;
+    color: #a20bfe;
     text-shadow: 0 0 8px #a20bfe;
 }
 .navbar{
@@ -216,7 +216,7 @@ p{
 .Mylike-text p{
     color: #ffd700;
 }
-.book-wrapper{
+/* .book-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -235,5 +235,16 @@ p{
     width: 300px;
     border-radius: 10px;
     display: block;
+} */
+ .full-image-section {
+  text-align: center;  /* 圖片置中 */
+  margin: 40px 0;
+}
+
+.big-image {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 10px;
+  display: inline-block;
 }
 
