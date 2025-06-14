@@ -172,7 +172,7 @@ p{
 .about-container {
   padding: 30px;
 }
-
+/* 每塊介紹：圖文左右排列 */
 .intro-section {
   display: flex;
   gap: 30px;
@@ -205,7 +205,8 @@ p{
   text-align: left;
 }
 .Mylike-text p{
-    color: #ffd700;
+    color: #191970;
+    color: #0f52ba;
 }
 .intro-section.reverse {
   flex-direction: row-reverse; /* 左右調換圖文位置 */
@@ -217,18 +218,22 @@ p{
 
 
 .page-layout {
-  display: flex;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 20px;
-  align-items: flex-start; /* 關鍵！讓左右對齊上方 */
+  display: flex;/* 讓子元素左右排列 */
+  gap: 60px;  /* 左右間距 */
+  max-width: 1200px;/* 整個內容最大寬度 */
+  margin: 60px auto;/* 上下 60px 間距，自動置中 */
+  padding: 20px;/* 內距 */
+  align-items: flex-start; /* 上對齊，確保右邊不會掉到底下 */
 }
-
+/* 左右欄基本樣式，共享設定 */
 .left-column,
 .right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex: 1;/* 左右平均寬度 */
+  display: flex;/* 裡面要垂直排列多塊介紹 */
+  flex-direction: column;/* 垂直排放 */
+  gap: 40px;/* 每塊介紹上下間距 */
+}
+
+.Mywife-text{
+    color: #ffd700;
 }
