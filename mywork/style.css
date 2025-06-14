@@ -173,17 +173,24 @@ p{
   padding: 30px;
 }
 
-.my-name {
-    margin-bottom: 10px;
-    font-size: 24px;
-    text-align: center;
-}
-
 .intro-section {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  margin-top: 20px;
+}
+
+.img-with-anme{
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列Polaris，從上至下 */
+    align-items: center;
+    /* 水平置中(可選) */
+}
+
+.my-name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .intro-img {
@@ -193,13 +200,6 @@ p{
 
 .intro-text {
   max-width: 600px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
-}
-.img-with-anme{
-    display: flex;
-    flex-direction: column;
-    /* 垂直排列Polaris，從上至下 */
-    align-items: center;
-    /* 水平置中(可選) */
 }
