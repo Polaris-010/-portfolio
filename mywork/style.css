@@ -170,14 +170,13 @@ p{
     /* 滑鼠滑過時 變色 */
 }
 .about-container {
-  padding: 1000px;
+  padding: 30px;
 }
 
 .intro-section {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 20px;
   /* margin-bottom: 60px; */
 }
 
@@ -187,27 +186,25 @@ p{
     flex-direction: column;
     /* 垂直排列Polaris，從上至下 */
     align-items: flex-start;
-    flex: 0 0 400px; 
 }
 
 .my-name {
     margin-bottom: 10px;
-    font-size: 42px;
+    font-size: 24px;
     text-align: center;
 }
 /* 圖片尺寸 */
 .intro-img {
-  width: 100px;
-  max-width: 4000px;
+  width: 200px;
   border-radius: 10px;
   display: block;
   margin: 0;
 }
 /* 作用在class容器上 */
 .intro-text {
-  max-width: 20px;
+  max-width: 600px;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.5;
   padding-top: 65px; /* 推下去，不影響段落之間距離 */
 }
 /* 設定每個p */
