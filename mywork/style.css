@@ -231,7 +231,7 @@ p{
 .book-right{
     flex-shrink: 0;
 }
-.cat2-image{
+.cat2{
     width: 300px;
     border-radius: 10px;
     display: block;
