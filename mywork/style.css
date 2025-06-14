@@ -198,7 +198,7 @@ p{
   width: 200px;
   border-radius: 10px;
   display: block;
-  margin: 0;
+  /* margin: 0; */
 }
 /* 作用在class容器上 */
 .intro-text {
@@ -217,11 +217,27 @@ p{
     color: #ffd700;
 }
 .intro-section.reverse {
-  flex-direction: row-reverse;
-  text-align: right; /* 讓文字靠右 */
+  flex-direction: row-reverse; /* 左右調換圖文位置 */
 }
 
 .intro-section.reverse .intro-text p {
-  text-align: right; /* 也讓段落文字靠右 */
+  text-align: right; /* 讓文字靠右 */
 }
 
+
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.left-column,
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
