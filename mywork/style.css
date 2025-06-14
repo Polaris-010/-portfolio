@@ -207,6 +207,7 @@ p{
 .intro-text p {
   margin: 0 0 8px 0; /* 每段間距固定，不會變太遠 */
   padding: 0;
+  text-align: left;
 }
 /* 自我介紹區塊 */
 /* .intro-text p {
